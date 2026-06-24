@@ -7,19 +7,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
-    <div class="background-orb orb-1"></div>
-    <div class="background-orb orb-2"></div>
+    <!-- Clean White Background -->
     
     <main class="container">
         <header>
             <h1>AI Tools</h1>
-            <p>Your curated collection of AI resources</p>
+            <p style="max-width: 650px; margin: 0 auto 2rem; line-height: 1.6;">Discover and explore a hand-curated directory of over 200 of the world's most powerful Artificial Intelligence tools. Filter by category to find the perfect AI for generating images, writing code, editing videos, or supercharging your productivity.</p>
             <div class="search-container">
                 <input type="text" id="search-input" placeholder="Search for tools...">
                 <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </div>
+            <div class="category-filters" id="category-filters">
+                <button class="category-btn active" data-category="All">All</button>
+                <!-- Categories will be injected here -->
             </div>
         </header>
         
@@ -30,9 +33,13 @@
         <div id="no-results" class="hidden">
             <p>No tools found matching your search.</p>
         </div>
+        
+        <footer style="text-align: center; margin-top: 4rem; padding-top: 2rem; border-top: 1px solid rgba(0,0,0,0.1); color: var(--text-secondary); position: relative; height: 100px;">
+            <p style="display: inline-block; padding: 10px; color: #000000; font-weight: 500;">Curated and developed by <span style="font-weight: 700;">Rishi</span></p>
+        </footer>
     </main>
 
-    <script src="data.js"></script>
-    <script src="script.js"></script>
+    <script src="data.js?v=15"></script>
+    <script src="script.js?v=15"></script>
 </body>
 </html>

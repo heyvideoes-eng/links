@@ -1,562 +1,1202 @@
 const bookmarksData = [
   {
-    "url": "https://gemini.google.com/app?utm_source=deepmind.google&utm_medium=referral&utm_campaign=gdm&utm_content=",
-    "title": "Gemini"
+    "title": "ChatGPT",
+    "url": "https://chat.openai.com/",
+    "category": "Chatbots",
+    "description": "The most popular AI chatbot by OpenAI, capable of answering questions, writing essays, and more."
   },
   {
-    "url": "https://voicemaker.in/",
-    "title": "Voicemaker\u00ae - Text to Speech Converter"
+    "title": "Gemini",
+    "url": "https://gemini.google.com/",
+    "category": "Chatbots",
+    "description": "Google's advanced AI model for text, code, and multimodal tasks."
   },
   {
-    "url": "https://chat.openai.com/?model=text-davinci-002-render-sha",
-    "title": "ChatGPT"
+    "title": "Claude",
+    "url": "https://claude.ai/",
+    "category": "Chatbots",
+    "description": "Anthropic's helpful, harmless, and honest AI assistant."
   },
   {
-    "url": "https://elevenlabs.io/speech-synthesis",
-    "title": "ElevenLabs - Generative AI Text to Speech &amp; Voice Cloning"
-  },
-  {
-    "url": "https://playgroundai.com/",
-    "title": "Playground AI"
-  },
-  {
-    "url": "https://www.d-id.com/",
-    "title": "D-ID AI Video Generator: Creating AI Videos from Photos &amp; Avatars"
-  },
-  {
-    "url": "https://www.veed.io/",
-    "title": "Perfect For Your Next Project - Video Editing Made Simple"
-  },
-  {
-    "url": "https://clipdrop.co/",
-    "title": "Create stunning visuals in seconds with AI."
-  },
-  {
-    "url": "https://huggingface.co/spaces/facebook/MusicGen",
-    "title": "MusicGen - a Hugging Face Space by facebook"
-  },
-  {
-    "url": "https://firefly.adobe.com/",
-    "title": "Adobe Firefly (Beta)"
-  },
-  {
-    "url": "https://imagecolorizer.com/colorize",
-    "title": "Colorize | Colorize Black and White Photos and Pictures"
-  },
-  {
-    "url": "https://themetavoice.xyz/",
-    "title": "MetaVoice - Real-time AI Voice Changer"
-  },
-  {
-    "url": "https://dubverse.ai/",
-    "title": "Online Video Dubbing with Dubverse.ai"
-  },
-  {
-    "url": "https://shots.so/",
-    "title": "Shots - Create Amazing Mockups"
-  },
-  {
-    "url": "https://tinywow.com/",
-    "title": "Free AI Writing, PDF, Image, and other Online Tools - TinyWow"
-  },
-  {
-    "url": "https://designer.microsoft.com/",
-    "title": "Microsoft Designer - Stunning designs in a flash"
-  },
-  {
-    "url": "https://www.bing.com/images/create/furniture-logo2c-black2c-line-art2c-minimalism-and-n/64d8a423d69f41d29ab07925a0fd6035?FORM=GENCRE",
-    "title": "furniture logo, black, line art, minimalism and. nature - Image Creator from Microsoft Bing"
-  },
-  {
-    "url": "https://bard.google.com/",
-    "title": "Bard \u2013 Chat-based AI tool from Google, powered by PaLM 2"
-  },
-  {
+    "title": "Perplexity",
     "url": "https://www.perplexity.ai/",
-    "title": "Perplexity AI"
+    "category": "Chatbots",
+    "description": "An AI-powered search engine that provides cited answers to your questions."
   },
   {
-    "url": "https://pi.ai/talk",
-    "title": "Pi, your personal AI"
+    "title": "Character.ai",
+    "url": "https://character.ai/",
+    "category": "Chatbots",
+    "description": "Conversational AI assistant to help answer questions and automate tasks."
   },
   {
-    "url": "https://vectorizer.ai/",
-    "title": "Trace Pixels To Vectors in Full Color, Fully Automatically, Using AI - Vectorizer.AI"
+    "title": "Pi",
+    "url": "https://pi.ai/",
+    "category": "Chatbots",
+    "description": "Conversational AI assistant to help answer questions and automate tasks."
   },
   {
-    "url": "https://www.bing.com/images/create?q=fire%20minimal%20logo%2C%20flame%2C%20vector%2C%20flat%2C%20coloured&rt=4&FORM=GENCRE&id=6504086dc2b24c15825f2f3e0d1d3959",
-    "title": "fire minimal logo, flame, vector, flat, coloured - Image Creator from Microsoft Bing"
+    "title": "Poe",
+    "url": "https://poe.com/",
+    "category": "Chatbots",
+    "description": "Conversational AI assistant to help answer questions and automate tasks."
   },
   {
-    "url": "https://www.promeai.com/blender",
-    "title": "Render Your Sketches into Stunning Masterpieces with AI Art Generator | PromeAI"
+    "title": "HuggingChat",
+    "url": "https://huggingface.co/chat",
+    "category": "Chatbots",
+    "description": "Conversational AI assistant to help answer questions and automate tasks."
   },
   {
-    "url": "https://www.promeai.com/design-ideas-ai-details/487438521736005-Architecture-General-Futurism-Dynamic%20Modernism-by-Ross-blender",
-    "title": "Innovative Design Ideas Generated with AI Images | PromeAI"
+    "title": "Meta AI",
+    "url": "https://ai.meta.com/",
+    "category": "Chatbots",
+    "description": "Conversational AI assistant to help answer questions and automate tasks."
   },
   {
-    "url": "https://trysintra.com/products/sintra-max-sale?tw_source=fb&tw_adid=120201574765460012&fbclid=IwAR2S39uD_mTI3gobYyT2lPwWBc4R2wsTgNW4xgG1Hk4CBcTpF-XvE8MjXhw_aem_AToyodBqkYOlJLNhcjtEcPh2Fp8ClTMNlaFmd2-qpm2KvnMDKi4fDeBMRQJuq24JFzztcWdTtZOx2uB1SefoNrss&utm_source=facebook&utm_medium=paid&campaign_id=120201574765340012&ad_id=120201574806130012",
-    "title": "Sintra Max (Sale) \u2013 Sintra \ud83e\udd16"
+    "title": "Grok",
+    "url": "https://x.ai/",
+    "category": "Chatbots",
+    "description": "Conversational AI assistant to help answer questions and automate tasks."
   },
   {
-    "url": "https://app.clipchamp.com/login",
-    "title": "Sign in | Clipchamp"
+    "title": "You.com",
+    "url": "https://you.com/",
+    "category": "Chatbots",
+    "description": "Conversational AI assistant to help answer questions and automate tasks."
   },
   {
-    "url": "https://www.stylar.ai/canvas?id=84889",
-    "title": "Stylar - Your Design Partner, a Powerful AI Image Editor"
+    "title": "Kuki",
+    "url": "https://www.kuki.ai/",
+    "category": "Chatbots",
+    "description": "Conversational AI assistant to help answer questions and automate tasks."
   },
   {
-    "url": "https://www.dora.run/recents",
-    "title": "Recents - Dora"
+    "title": "Replika",
+    "url": "https://replika.com/",
+    "category": "Chatbots",
+    "description": "Conversational AI assistant to help answer questions and automate tasks."
   },
   {
-    "url": "https://svg.io/",
-    "title": "AI text prompt to SVG | SVG.io"
+    "title": "Chai",
+    "url": "https://chai-research.com/",
+    "category": "Chatbots",
+    "description": "Conversational AI assistant to help answer questions and automate tasks."
   },
   {
-    "url": "https://emojis.sh/p/o0Azp9SP48",
-    "title": "Toothbrush | AI Emoji Generator"
+    "title": "DeepSeek",
+    "url": "https://chat.deepseek.com/",
+    "category": "Chatbots",
+    "description": "Conversational AI assistant to help answer questions and automate tasks."
   },
   {
-    "url": "https://ideogram.ai/login",
-    "title": "Helping people become more creative."
+    "title": "Janitor AI",
+    "url": "https://janitorai.com/",
+    "category": "Chatbots",
+    "description": "Conversational AI assistant to help answer questions and automate tasks."
   },
   {
-    "url": "https://pixcap.com/design/640f6bbb-d512-4ed6-b16d-e7473c0997c5?now=1704895469407",
-    "title": "Design - Pixcap"
+    "title": "ChatPDF",
+    "url": "https://www.chatpdf.com/",
+    "category": "Chatbots",
+    "description": "Conversational AI assistant to help answer questions and automate tasks."
   },
   {
-    "url": "https://labs.openai.com/",
-    "title": "DALL\u00b7E"
+    "title": "Chatsonic",
+    "url": "https://writesonic.com/chat",
+    "category": "Chatbots",
+    "description": "Conversational AI assistant to help answer questions and automate tasks."
   },
   {
-    "url": "https://apps.apple.com/us/app/virbo-ai-video-ai-generator/id6448904128?mt=8",
-    "title": "Virbo-AI Video &amp; AI Generator on the App Store"
+    "title": "Bing Chat",
+    "url": "https://www.bing.com/chat",
+    "category": "Chatbots",
+    "description": "Conversational AI assistant to help answer questions and automate tasks."
   },
   {
-    "url": "https://virbo.wondershare.com/",
-    "title": "Wondershare Virbo - Generate Engaging AI Video in Minutes!"
+    "title": "Andi",
+    "url": "https://andisearch.com/",
+    "category": "Chatbots",
+    "description": "Conversational AI assistant to help answer questions and automate tasks."
   },
   {
-    "url": "https://openart.ai/create",
-    "title": "Create - AI Image Generator | Create Art or Modify Images with AI"
+    "title": "Midjourney",
+    "url": "https://www.midjourney.com/",
+    "category": "Image",
+    "description": "Generate high-quality, artistic AI images from text prompts."
   },
   {
-    "url": "https://www.personachat.co/home-v2",
-    "title": "Home v2"
+    "title": "DALL-E 3",
+    "url": "https://openai.com/dall-e-3",
+    "category": "Image",
+    "description": "OpenAI's latest image generation model integrated directly into ChatGPT."
   },
   {
-    "url": "https://picofme.io/",
-    "title": "picofme.io | AI profile picture maker"
+    "title": "Stable Diffusion",
+    "url": "https://stability.ai/",
+    "category": "Image",
+    "description": "Open-source AI image generation model with incredible flexibility."
   },
   {
-    "url": "https://gemini.google.com/advanced?utm_source=google&utm_medium=cpc&utm_campaign=sem_lp&gad_source=1&gclid=Cj0KCQjwncWvBhD_ARIsAEb2HW8ZQYdKD0bByfXnjt4G6FKkUjkIccyZChqO5EjpCSrb4U2KbqiCp0MaAndVEALw_wcB",
-    "title": "Gemini Advanced \u2013 get access to Google&#39;s most capable AI model, 1.0 Ultra"
-  },
-  {
-    "url": "https://builder.io/content",
-    "title": "Builder.io: Visual Development Platform"
-  },
-  {
-    "url": "https://www.bezi.com/ai",
-    "title": "Bezi AI"
-  },
-  {
-    "url": "https://new.express.adobe.com/",
-    "title": "Adobe Express"
-  },
-  {
-    "url": "https://v0.dev/",
-    "title": "v0 by Vercel"
-  },
-  {
-    "url": "https://magnific.ai/",
-    "title": "Image upscaler"
-  },
-  {
-    "url": "https://www.promeai.pro/?vsource=youtube_share-AnshMehra202403",
-    "title": "AI art generator : Bring creativity to life"
-  },
-  {
-    "url": "https://huggingface.co/",
-    "title": "Hugging Face \u2013 The AI community building the future."
-  },
-  {
-    "url": "https://claude.ai/onboarding?returnTo=%2F%3F",
-    "title": "Claude"
-  },
-  {
-    "url": "https://perchance.org/ai-character-generator",
-    "title": "AI Character Generator (free, no sign-up, unlimited) \u2015 Perchance"
-  },
-  {
-    "url": "https://tinywow.com/image/remove-bg",
-    "title": "Free Image Background Remover - Unlimited Use - TinyWow"
-  },
-  {
-    "url": "https://remaker.ai/en",
-    "title": "faceswap"
-  },
-  {
-    "url": "https://www.loom.com/share/456273a4cb3941caa239053bd393004d",
-    "title": "\u0935\u0940\u0921\u093f\u092f\u094b \u0938\u0902\u0926\u0947\u0936: \u0921\u093f\u091c\u093e\u0907\u0928 \u0938\u093f\u0938\u094d\u091f\u092e \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902"
-  },
-  {
-    "url": "https://www.seaart.ai/",
-    "title": "Free AI Art Generator: Create AI Art from Text - SeaArt AI"
-  },
-  {
-    "url": "https://firefly.adobe.com/generate/images?id=886a7975-c0ae-4280-910a-d4ee44b4deec",
-    "title": "Adobe Firefly"
-  },
-  {
-    "url": "https://www.packagedesign.app/",
-    "title": "Package Design"
-  },
-  {
-    "url": "https://ideogram.ai/t/explore",
-    "title": "Ideogram"
-  },
-  {
-    "url": "https://chatgptis.org/",
-    "title": "ChatGPT Unlimited Free Use Chat GPT"
-  },
-  {
-    "url": "https://ttsmaker.com/",
-    "title": "Free Text to Speech Online - TTSMaker"
-  },
-  {
-    "url": "https://www.krea.ai/home",
-    "title": "Flux | KREA.AI"
-  },
-  {
-    "url": "https://www.immersity.ai/",
-    "title": "Immersity AI | Convert Image and Video to 3D"
-  },
-  {
+    "title": "Leonardo.ai",
     "url": "https://leonardo.ai/",
-    "title": "AI Image Generator - Create Art, Images &amp; Video | Leonardo AI"
+    "category": "Image",
+    "description": "AI-powered image generation and editing platform."
   },
   {
-    "url": "https://www.imagine.art/dashboard/video?utm_source=google&utm_medium=cpc&utm_campaign=Web_WW_Vid_AI1.1&utm_term=pika%20labs&utm_campaign=&utm_source=adwords&utm_medium=ppc&hsa_acc=3029240990&hsa_cam=21453551905&hsa_grp=164481109396&hsa_ad=705108964251&hsa_src=g&hsa_tgt=kwd-2170628610887&hsa_kw=pika%20labs&hsa_mt=b&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=Cj0KCQiA57G5BhDUARIsACgCYnwBKLs6E_GICg9W1OVBdj8gqkOY5nfm0tsXoJUDaMyPJ9Fv_eAYuTYaAmXyEALw_wcB",
-    "title": "AI Video Generator"
+    "title": "Playground AI",
+    "url": "https://playgroundai.com/",
+    "category": "Image",
+    "description": "AI-powered image generation and editing platform."
   },
   {
-    "url": "https://kome.ai/",
-    "title": "Kome: AI Summary and Bookmark Extension"
+    "title": "Ideogram",
+    "url": "https://ideogram.ai/",
+    "category": "Image",
+    "description": "AI-powered image generation and editing platform."
   },
   {
-    "url": "https://app.logodiffusion.com/?loggedIn=true",
-    "title": "Register | Logo Diffusion"
+    "title": "Krea",
+    "url": "https://www.krea.ai/",
+    "category": "Image",
+    "description": "AI-powered image generation and editing platform."
   },
   {
-    "url": "https://www.ni3.app/",
-    "title": "AI Thumbnail Maker - Create Viral YouTube Thumbnails"
+    "title": "Magnific",
+    "url": "https://magnific.ai/",
+    "category": "Image",
+    "description": "AI-powered image generation and editing platform."
   },
   {
-    "url": "https://lovable.dev/projects/658dbeb4-20c8-401b-820e-85e0d1df5bbb",
-    "title": "Lovable - Build for the web 20x faster"
+    "title": "Topaz Labs",
+    "url": "https://www.topazlabs.com/",
+    "category": "Image",
+    "description": "AI-powered image generation and editing platform."
   },
   {
-    "url": "https://vercel.com/",
-    "title": "Vercel: Build and deploy the best web experiences with the Frontend Cloud"
+    "title": "Adobe Firefly",
+    "url": "https://firefly.adobe.com/",
+    "category": "Image",
+    "description": "AI-powered image generation and editing platform."
   },
   {
-    "url": "https://www.ubuy.co.in/product/PMVET6EDI-rst-hyperdrive?srsltid=AfmBOoqByENAU8d_z3UmU_7VoGl97osU-Hbo3zwno25Sx01rDDb_lNF5",
-    "title": "dril"
+    "title": "Luma Genie",
+    "url": "https://lumalabs.ai/genie",
+    "category": "Image",
+    "description": "AI-powered image generation and editing platform."
   },
   {
-    "url": "https://deepmind.google/",
-    "title": "Deepmind"
+    "title": "Meshy",
+    "url": "https://www.meshy.ai/",
+    "category": "Image",
+    "description": "AI-powered image generation and editing platform."
   },
   {
-    "url": "https://www.kimi.com/en/",
-    "title": "Kimi AI - Kimi K2 Thinking is here"
+    "title": "Tripo3D",
+    "url": "https://www.tripo3d.ai/",
+    "category": "Image",
+    "description": "AI-powered image generation and editing platform."
   },
   {
-    "url": "https://aistudio.google.com/apps/drive/1KDV8lNzgNCXjhhdmc7cd_vZCxcF-Ccwt?showAssistant=true&resourceKey=&showCode=true",
-    "title": "Google AI Studio"
+    "title": "CSM",
+    "url": "https://csm.ai/",
+    "category": "Image",
+    "description": "AI-powered image generation and editing platform."
   },
   {
-    "url": "https://gemini.google.com/app/fed38a994c0cb342?android-min-version=301356232&ios-min-version=322.0&is_sa=1&campaign_id=gemini_overview_page&utm_source=gemini&utm_medium=web&utm_campaign=gemini_overview_page&pt=9008&mt=8&ct=gemini_overview_page&hl=en-IN&_gl=1*1uqvuy0*_gcl_aw*R0NMLjE3NTcxNDE5NTUuQ2owS0NRanduY1d2QmhEX0FSSXNBRWIySFc4WlFZZEtEMGJCeWZYbmp0NEc2RktrVWprSWNjeVpDaHFPNUVqcENTcmI0VTJLYnFpQ3AwTWFBbmRWRUFMd193Y0I.*_gcl_au*MTgxNzA5NjIyNS4xNzU2MzYyNjEx*_up*MQ..*_ga*MTQ3OTM3MjM2My4xNzU2MzYyNjEx*_ga_WC57KJ50ZZ*czE3NTcxNDE5NTUkbzIkZzAkdDE3NTcxNDE5NTUkajYwJGwwJGgw&gclid=Cj0KCQjwncWvBhD_ARIsAEb2HW8ZQYdKD0bByfXnjt4G6FKkUjkIccyZChqO5EjpCSrb4U2KbqiCp0MaAndVEALw_wcB",
-    "title": "Google Gemini"
+    "title": "Lexica",
+    "url": "https://lexica.art/",
+    "category": "Image",
+    "description": "AI-powered image generation and editing platform."
   },
   {
-    "url": "https://gemini.google.com/app",
-    "title": "Google Gemini"
+    "title": "Civitai",
+    "url": "https://civitai.com/",
+    "category": "Image",
+    "description": "AI-powered image generation and editing platform."
   },
   {
-    "url": "https://deepmind.google/models/",
-    "title": "Models - Google DeepMind"
+    "title": "NightCafe",
+    "url": "https://creator.nightcafe.studio/",
+    "category": "Image",
+    "description": "AI-powered image generation and editing platform."
   },
   {
-    "url": "https://www.freepik.com/pikaso/spaces?tab=templates&board_filter=mine&log-in=google",
-    "title": "Spaces | Freepik AI"
+    "title": "Artbreeder",
+    "url": "https://www.artbreeder.com/",
+    "category": "Image",
+    "description": "AI-powered image generation and editing platform."
   },
   {
-    "url": "https://aistudio.google.com/apps?source=",
-    "title": "Google AI Studio"
+    "title": "SeaArt",
+    "url": "https://seaart.ai/",
+    "category": "Image",
+    "description": "AI-powered image generation and editing platform."
   },
   {
-    "url": "https://replit.com/",
-    "title": "Replit \u2013 Build apps and sites with AI"
+    "title": "Recraft",
+    "url": "https://www.recraft.ai/",
+    "category": "Image",
+    "description": "AI-powered image generation and editing platform."
   },
   {
-    "url": "https://huggingface.co/spaces?q=Microcopy&category=language-translation",
-    "title": "Spaces - Hugging Face"
+    "title": "Stockimg.ai",
+    "url": "https://stockimg.ai/",
+    "category": "Image",
+    "description": "AI-powered image generation and editing platform."
   },
   {
-    "url": "https://higgsfield.ai/",
-    "title": "AI Video Generator &amp; Image Generator by Higgsfield"
+    "title": "Pebblely",
+    "url": "https://pebblely.com/",
+    "category": "Image",
+    "description": "AI-powered image generation and editing platform."
   },
   {
-    "url": "https://ai.google.dev/",
-    "title": "Gemini Developer API | Gemma open models  |  Google AI for Developers"
+    "title": "Photoroom",
+    "url": "https://www.photoroom.com/",
+    "category": "Image",
+    "description": "AI-powered image generation and editing platform."
   },
   {
-    "url": "https://notebooklm.google/?gad_source=1&gad_campaignid=22621550558&gbraid=0AAAAA-fwSscAPWQ5dg48dmiRzkDgAFNZY&gclid=Cj0KCQiAxJXJBhD_ARIsAH_JGjgSPq4zVXK9TQiaAG7jsn8OGGtq3beHb3Xs6gOmLwVoVigcyF6U5aIaAv2oEALw_wcB",
-    "title": "Google NotebookLM | AI Research Tool &amp; Thinking Partner"
+    "title": "Clipdrop",
+    "url": "https://clipdrop.co/",
+    "category": "Image",
+    "description": "AI-powered image generation and editing platform."
   },
   {
-    "url": "https://notebooklm.google.com/?icid=home_maincta&_gl=1*9y1i09*_up*MQ..*_ga*MTI4MTUzMDY5NC4xNzY0MTM5NDY0*_ga_W0LDH41ZCB*czE3NjQxMzk0NjMkbzEkZzEkdDE3NjQxMzk0ODEkajQyJGwwJGgw&gclid=Cj0KCQiAxJXJBhD_ARIsAH_JGjgSPq4zVXK9TQiaAG7jsn8OGGtq3beHb3Xs6gOmLwVoVigcyF6U5aIaAv2oEALw_wcB&gbraid=0AAAAA-fwSscAPWQ5dg48dmiRzkDgAFNZY&original_referer=https:%2F%2Fnotebooklm.google%23&pli=1",
-    "title": "NotebookLM"
+    "title": "Craiyon",
+    "url": "https://www.craiyon.com/",
+    "category": "Image",
+    "description": "AI-powered image generation and editing platform."
   },
   {
-    "url": "https://deepai.org/video",
-    "title": "AI Video Generator"
+    "title": "Cutout.pro",
+    "url": "https://www.cutout.pro/",
+    "category": "Image",
+    "description": "AI-powered image generation and editing platform."
   },
   {
-    "url": "https://platform.openai.com/agent-builder",
-    "title": "Agent builder - OpenAI API"
+    "title": "Kaiber",
+    "url": "https://kaiber.ai/",
+    "category": "Image",
+    "description": "AI-powered image generation and editing platform."
   },
   {
-    "url": "https://labs.google/",
-    "title": "Google Labs: Google&#39;s home for AI experiments - Google Labs"
+    "title": "Tengr.ai",
+    "url": "https://tengr.ai/",
+    "category": "Image",
+    "description": "AI-powered image generation and editing platform."
   },
   {
-    "url": "https://labs.google/fx/tools/flow",
-    "title": "Flow"
+    "title": "DeepAI",
+    "url": "https://deepai.org/",
+    "category": "Image",
+    "description": "AI-powered image generation and editing platform."
   },
   {
-    "url": "https://zylochat.com/automations/create",
-    "title": "ZyloChat | Create Automations"
+    "title": "Dezgo",
+    "url": "https://dezgo.com/",
+    "category": "Image",
+    "description": "AI-powered image generation and editing platform."
   },
   {
-    "url": "https://ovi.video/",
-    "title": "Ovi Video Generator - Advanced AI Video Platform"
+    "title": "Runway",
+    "url": "https://runwayml.com/",
+    "category": "Video",
+    "description": "Advanced suite of AI tools for video editing, generation, and VFX."
   },
   {
-    "url": "https://seed.bytedance.com/en/seedream4_0",
-    "title": "Seedream"
+    "title": "Pika Labs",
+    "url": "https://pika.art/",
+    "category": "Video",
+    "description": "An AI video generation platform that brings your text to life."
   },
   {
-    "url": "https://bytez.com/",
-    "title": "Bytez - open source AI"
+    "title": "Sora",
+    "url": "https://openai.com/sora",
+    "category": "Video",
+    "description": "OpenAI's groundbreaking text-to-video generation model."
   },
   {
-    "url": "https://heyneo.so/",
-    "title": "Neo AI engineer"
+    "title": "Descript",
+    "url": "https://www.descript.com/",
+    "category": "Video",
+    "description": "Create, edit, and enhance professional videos using AI."
   },
   {
-    "url": "https://www.imagine.art/",
-    "title": "ImagineArt - AI Creative Suite | Images, Videos, Voice"
+    "title": "Synthesia",
+    "url": "https://www.synthesia.io/",
+    "category": "Video",
+    "description": "Create, edit, and enhance professional videos using AI."
   },
   {
-    "url": "https://labs.google/fx/tools/whisk/project",
-    "title": "Whisk - labs.google/fx"
+    "title": "HeyGen",
+    "url": "https://www.heygen.com/",
+    "category": "Video",
+    "description": "Create, edit, and enhance professional videos using AI."
   },
   {
-    "url": "https://animateai.pro/",
-    "title": "AnimateAI - The 1st all-in-one AI video generation tool for Animation Video"
+    "title": "CapCut",
+    "url": "https://www.capcut.com/",
+    "category": "Video",
+    "description": "Create, edit, and enhance professional videos using AI."
   },
   {
-    "url": "https://www.smartinfovision.com/",
-    "title": "Best Interactive Flat Panel &amp; Digital Board for Online Teaching"
+    "title": "InVideo",
+    "url": "https://invideo.io/",
+    "category": "Video",
+    "description": "Create, edit, and enhance professional videos using AI."
   },
   {
-    "url": "https://app.runwayml.com/video-tools/teams/saurabhsaini449/dashboard",
-    "title": "Dashboard - Runway"
+    "title": "Opus Clip",
+    "url": "https://www.opus.pro/",
+    "category": "Video",
+    "description": "Create, edit, and enhance professional videos using AI."
   },
   {
-    "url": "https://www.imagine.art/dashboard/video/library",
-    "title": "AI Video Generator"
+    "title": "Munch",
+    "url": "https://www.getmunch.com/",
+    "category": "Video",
+    "description": "Create, edit, and enhance professional videos using AI."
   },
   {
-    "url": "https://www.hedra.com/",
-    "title": "Hedra"
+    "title": "Veed.io",
+    "url": "https://www.veed.io/",
+    "category": "Video",
+    "description": "Create, edit, and enhance professional videos using AI."
   },
   {
-    "url": "https://fal.ai/",
-    "title": "fal.ai | The generative media platform for developers"
-  },
-  {
-    "url": "https://designer.microsoft.com/image-creator",
-    "title": "Microsoft Designer - Stunning designs in a flash"
-  },
-  {
-    "url": "https://pixverse.ai/",
-    "title": "PixVerse - Create breath-taking videos with PixVerse AI"
-  },
-  {
+    "title": "Luma Dream Machine",
     "url": "https://lumalabs.ai/dream-machine",
-    "title": "Luma Dream Machine | AI Video Generator"
+    "category": "Video",
+    "description": "Create, edit, and enhance professional videos using AI."
   },
   {
-    "url": "https://www.klingai.com/",
-    "title": "KLING AI: Next-Generation AI Creative Studio"
+    "title": "Kling AI",
+    "url": "https://klingai.com/",
+    "category": "Video",
+    "description": "Create, edit, and enhance professional videos using AI."
   },
   {
+    "title": "Haiper",
     "url": "https://haiper.ai/",
-    "title": "Haiper - AI Video Generator"
+    "category": "Video",
+    "description": "Create, edit, and enhance professional videos using AI."
   },
   {
-    "url": "https://fal.ai/dashboard",
-    "title": "fal.ai/dashboard"
+    "title": "Rask AI",
+    "url": "https://www.rask.ai/",
+    "category": "Video",
+    "description": "Create, edit, and enhance professional videos using AI."
   },
   {
-    "url": "https://fal.ai/models/fal-ai/recraft-v3/playground",
-    "title": "Recraft V3 | Text to Image | AI Playground | fal.ai"
+    "title": "Klap",
+    "url": "https://klap.app/",
+    "category": "Video",
+    "description": "Create, edit, and enhance professional videos using AI."
   },
   {
-    "url": "https://deepai.org/machine-learning-model/text2img",
-    "title": "AI Image Generator"
+    "title": "Submagic",
+    "url": "https://submagic.co/",
+    "category": "Video",
+    "description": "Create, edit, and enhance professional videos using AI."
   },
   {
-    "url": "https://app.pixverse.ai/home",
-    "title": "Home | PixVerse"
+    "title": "Vizard",
+    "url": "https://vizard.ai/",
+    "category": "Video",
+    "description": "Create, edit, and enhance professional videos using AI."
   },
   {
-    "url": "https://www.decohere.ai/home",
-    "title": "Decohere | Home"
+    "title": "Fliki",
+    "url": "https://fliki.ai/",
+    "category": "Video",
+    "description": "Create, edit, and enhance professional videos using AI."
   },
   {
-    "url": "https://fal.ai/models",
-    "title": "Model Gallery | fal.ai"
+    "title": "Pictory",
+    "url": "https://pictory.ai/",
+    "category": "Video",
+    "description": "Create, edit, and enhance professional videos using AI."
   },
   {
-    "url": "https://www.futurepedia.io/",
-    "title": "Futurepedia - The Largest AI Tools Directory | Home"
+    "title": "D-ID",
+    "url": "https://www.d-id.com/",
+    "category": "Video",
+    "description": "Create, edit, and enhance professional videos using AI."
   },
   {
-    "url": "https://aivalley.ai/",
-    "title": "AI Valley | Discover The Newest AI Tools And Prompts For Any Use In Seconds"
+    "title": "Colossyan",
+    "url": "https://www.colossyan.com/",
+    "category": "Video",
+    "description": "Create, edit, and enhance professional videos using AI."
   },
   {
-    "url": "https://supertools.therundown.ai/",
-    "title": "Supertools | Best AI Tools Guide"
+    "title": "Elai.io",
+    "url": "https://elai.io/",
+    "category": "Video",
+    "description": "Create, edit, and enhance professional videos using AI."
   },
   {
-    "url": "https://saasprompts.com/",
-    "title": "SaaS Prompts - 500+ ChatGPT Prompts for SaaS"
+    "title": "Hour One",
+    "url": "https://hourone.ai/",
+    "category": "Video",
+    "description": "Create, edit, and enhance professional videos using AI."
   },
   {
-    "url": "https://theresanaiforthat.com/",
-    "title": "There&#39;s An AI For That - The Biggest AI Aggregator"
+    "title": "Wonder Studio",
+    "url": "https://wonderdynamics.com/",
+    "category": "Video",
+    "description": "Create, edit, and enhance professional videos using AI."
   },
   {
-    "url": "https://www.godaddy.com/en-in/domainsearch/find?domainToCheck=designarc#",
-    "title": "GoDaddy Domain Name Search"
+    "title": "GliaCloud",
+    "url": "https://www.gliacloud.com/",
+    "category": "Video",
+    "description": "Create, edit, and enhance professional videos using AI."
   },
   {
-    "url": "https://www.figma.com/community/collections/best-figjam-ai-prompts",
-    "title": "FigJam AI Prompts"
+    "title": "Wisecut",
+    "url": "https://www.wisecut.video/",
+    "category": "Video",
+    "description": "Create, edit, and enhance professional videos using AI."
   },
   {
-    "url": "https://transitionalhooks.com/social-media-video-hook-library/",
-    "title": "Social Media Video Hook Library | Transitional Hooks"
+    "title": "Gling",
+    "url": "https://gling.ai/",
+    "category": "Video",
+    "description": "Create, edit, and enhance professional videos using AI."
   },
   {
-    "url": "https://docs.midjourney.com/docs/parameter-list",
-    "title": "Midjourney Parameter List"
+    "title": "Vidyo.ai",
+    "url": "https://vidyo.ai/",
+    "category": "Video",
+    "description": "Create, edit, and enhance professional videos using AI."
   },
   {
-    "url": "https://midlibrary.io/",
-    "title": "Andrei Kovalev&#39;s Midlibrary\u2014Midjourney AI Styles Library and Guide"
+    "title": "Maja",
+    "url": "https://maja.ai/",
+    "category": "Video",
+    "description": "Create, edit, and enhance professional videos using AI."
   },
   {
-    "url": "https://learnprompting.org/docs/intro",
-    "title": "Welcome | Learn Prompting: Your Guide to Communicating with AI"
+    "title": "ElevenLabs",
+    "url": "https://elevenlabs.io/",
+    "category": "Audio",
+    "description": "The most realistic AI voice generator and text-to-speech software."
   },
   {
-    "url": "https://promptvine.com/",
-    "title": "ChatGPT Prompts Library | PromptVine"
+    "title": "Suno",
+    "url": "https://suno.com/",
+    "category": "Audio",
+    "description": "Create incredible, full-length songs with AI using simple text prompts."
   },
   {
-    "url": "https://platform.openai.com/docs/introduction",
-    "title": "Introduction - OpenAI API"
+    "title": "Udio",
+    "url": "https://www.udio.com/",
+    "category": "Audio",
+    "description": "AI voice generation, text-to-speech, and music creation tool."
   },
   {
-    "url": "https://www.make.com/en/welcome",
-    "title": "Welcome |"
+    "title": "Murf.ai",
+    "url": "https://murf.ai/",
+    "category": "Audio",
+    "description": "AI voice generation, text-to-speech, and music creation tool."
   },
   {
-    "url": "https://app.manychat.com/signin?error=authFailedProfileNotExist&amp;return=%2Fprofile%2Fdashboard&amp;error_return=",
-    "title": "Sign In"
+    "title": "Lovo.ai",
+    "url": "https://lovo.ai/",
+    "category": "Audio",
+    "description": "AI voice generation, text-to-speech, and music creation tool."
   },
   {
-    "url": "https://n8n.io/?ps_partner_key=ZTRmNmY5NmFjYTI2&ps_xid=h0QoaA4znek0sD&gsxid=h0QoaA4znek0sD&gspk=ZTRmNmY5NmFjYTI2&gad_source=1&gad_campaignid=23259375483&gbraid=0AAAABCDCbcN-irlLWqEkedw1w1YoSr4hp&gclid=Cj0KCQiAoZDJBhC0ARIsAERP-F_typAo3YP76uol5r1BLtUDag0D7Bustdy_Fpk9nJmZBLNYiJwNfFgaAnRlEALw_wcB",
-    "title": "AI Workflow Automation Platform &amp; Tools - n8n"
+    "title": "ElevenLabs Dubbing",
+    "url": "https://elevenlabs.io/dubbing",
+    "category": "Audio",
+    "description": "AI voice generation, text-to-speech, and music creation tool."
   },
   {
-    "url": "https://render.com/",
-    "title": "Cloud Application Platform | Render"
+    "title": "WellSaid Labs",
+    "url": "https://wellsaidlabs.com/",
+    "category": "Audio",
+    "description": "AI voice generation, text-to-speech, and music creation tool."
   },
   {
-    "url": "https://drive.google.com/drive/folders/1hbkKFXlxiQNnFn4MUfe5r7e_m2sKxzyI?utm_referrer=sp_auto_dm",
-    "title": "Dehancer + Batman Lut - Google Drive"
+    "title": "Play.ht",
+    "url": "https://play.ht/",
+    "category": "Audio",
+    "description": "AI voice generation, text-to-speech, and music creation tool."
   },
   {
-    "url": "https://boosend.ai/",
-    "title": "BooSend - Automate Instagram Comment Replies and DM Sales"
+    "title": "Resemble AI",
+    "url": "https://www.resemble.ai/",
+    "category": "Audio",
+    "description": "AI voice generation, text-to-speech, and music creation tool."
   },
   {
-    "url": "https://n8n.io/",
-    "title": "AI Workflow Automation Platform &amp; Tools - n8n"
+    "title": "Altered",
+    "url": "https://www.altered.ai/",
+    "category": "Audio",
+    "description": "AI voice generation, text-to-speech, and music creation tool."
   },
   {
-    "url": "https://www.usegalileo.ai/explore",
-    "title": "Galileo AI"
+    "title": "Voiceify",
+    "url": "https://voiceify.ai/",
+    "category": "Audio",
+    "description": "AI voice generation, text-to-speech, and music creation tool."
   },
   {
-    "url": "https://www.khroma.co/train",
-    "title": "Khroma - The AI color tool for designers"
+    "title": "Soundraw",
+    "url": "https://soundraw.io/",
+    "category": "Audio",
+    "description": "AI voice generation, text-to-speech, and music creation tool."
   },
   {
+    "title": "Mubert",
+    "url": "https://mubert.com/",
+    "category": "Audio",
+    "description": "AI voice generation, text-to-speech, and music creation tool."
+  },
+  {
+    "title": "Boomy",
+    "url": "https://boomy.com/",
+    "category": "Audio",
+    "description": "AI voice generation, text-to-speech, and music creation tool."
+  },
+  {
+    "title": "AIVA",
+    "url": "https://www.aiva.ai/",
+    "category": "Audio",
+    "description": "AI voice generation, text-to-speech, and music creation tool."
+  },
+  {
+    "title": "Splash",
+    "url": "https://www.splashmusic.com/",
+    "category": "Audio",
+    "description": "AI voice generation, text-to-speech, and music creation tool."
+  },
+  {
+    "title": "Beatoven.ai",
+    "url": "https://www.beatoven.ai/",
+    "category": "Audio",
+    "description": "AI voice generation, text-to-speech, and music creation tool."
+  },
+  {
+    "title": "Audiocraft",
+    "url": "https://audiocraft.metademolab.com/",
+    "category": "Audio",
+    "description": "AI voice generation, text-to-speech, and music creation tool."
+  },
+  {
+    "title": "Vocal Remover",
+    "url": "https://vocalremover.org/",
+    "category": "Audio",
+    "description": "AI voice generation, text-to-speech, and music creation tool."
+  },
+  {
+    "title": "LALAL.AI",
+    "url": "https://www.lalal.ai/",
+    "category": "Audio",
+    "description": "AI voice generation, text-to-speech, and music creation tool."
+  },
+  {
+    "title": "GitHub Copilot",
+    "url": "https://github.com/features/copilot",
+    "category": "Coding",
+    "description": "Your AI pair programmer that suggests code snippets directly in your editor."
+  },
+  {
+    "title": "Cursor",
+    "url": "https://cursor.com/",
+    "category": "Coding",
+    "description": "The AI-first code editor built to make you instantly more productive."
+  },
+  {
+    "title": "Replit",
+    "url": "https://replit.com/",
+    "category": "Coding",
+    "description": "AI coding assistant to help write, debug, and understand code faster."
+  },
+  {
+    "title": "Hugging Face",
+    "url": "https://huggingface.co/",
+    "category": "Coding",
+    "description": "AI coding assistant to help write, debug, and understand code faster."
+  },
+  {
+    "title": "LangChain",
+    "url": "https://www.langchain.com/",
+    "category": "Coding",
+    "description": "AI coding assistant to help write, debug, and understand code faster."
+  },
+  {
+    "title": "Pinecone",
+    "url": "https://www.pinecone.io/",
+    "category": "Coding",
+    "description": "AI coding assistant to help write, debug, and understand code faster."
+  },
+  {
+    "title": "Vercel v0",
+    "url": "https://v0.dev/",
+    "category": "Coding",
+    "description": "AI coding assistant to help write, debug, and understand code faster."
+  },
+  {
+    "title": "Codeium",
+    "url": "https://codeium.com/",
+    "category": "Coding",
+    "description": "AI coding assistant to help write, debug, and understand code faster."
+  },
+  {
+    "title": "Tabnine",
+    "url": "https://www.tabnine.com/",
+    "category": "Coding",
+    "description": "AI coding assistant to help write, debug, and understand code faster."
+  },
+  {
+    "title": "Cohere",
+    "url": "https://cohere.com/",
+    "category": "Coding",
+    "description": "AI coding assistant to help write, debug, and understand code faster."
+  },
+  {
+    "title": "Mistral",
+    "url": "https://mistral.ai/",
+    "category": "Coding",
+    "description": "AI coding assistant to help write, debug, and understand code faster."
+  },
+  {
+    "title": "CodiumAI",
+    "url": "https://www.codium.ai/",
+    "category": "Coding",
+    "description": "AI coding assistant to help write, debug, and understand code faster."
+  },
+  {
+    "title": "Blackbox AI",
+    "url": "https://www.blackbox.ai/",
+    "category": "Coding",
+    "description": "AI coding assistant to help write, debug, and understand code faster."
+  },
+  {
+    "title": "Sourcegraph Cody",
+    "url": "https://about.sourcegraph.com/cody",
+    "category": "Coding",
+    "description": "AI coding assistant to help write, debug, and understand code faster."
+  },
+  {
+    "title": "MutableAI",
+    "url": "https://mutable.ai/",
+    "category": "Coding",
+    "description": "AI coding assistant to help write, debug, and understand code faster."
+  },
+  {
+    "title": "Warp",
+    "url": "https://www.warp.dev/",
+    "category": "Coding",
+    "description": "AI coding assistant to help write, debug, and understand code faster."
+  },
+  {
+    "title": "Mintlify",
+    "url": "https://mintlify.com/",
+    "category": "Coding",
+    "description": "AI coding assistant to help write, debug, and understand code faster."
+  },
+  {
+    "title": "Qdrant",
+    "url": "https://qdrant.tech/",
+    "category": "Coding",
+    "description": "AI coding assistant to help write, debug, and understand code faster."
+  },
+  {
+    "title": "Weaviate",
+    "url": "https://weaviate.io/",
+    "category": "Coding",
+    "description": "AI coding assistant to help write, debug, and understand code faster."
+  },
+  {
+    "title": "Chroma",
+    "url": "https://www.trychroma.com/",
+    "category": "Coding",
+    "description": "AI coding assistant to help write, debug, and understand code faster."
+  },
+  {
+    "title": "LlamaIndex",
+    "url": "https://www.llamaindex.ai/",
+    "category": "Coding",
+    "description": "AI coding assistant to help write, debug, and understand code faster."
+  },
+  {
+    "title": "Supabase",
+    "url": "https://supabase.com/",
+    "category": "Coding",
+    "description": "AI coding assistant to help write, debug, and understand code faster."
+  },
+  {
+    "title": "Firebase Genkit",
+    "url": "https://firebase.google.com/products/genkit",
+    "category": "Coding",
+    "description": "AI coding assistant to help write, debug, and understand code faster."
+  },
+  {
+    "title": "Ollama",
+    "url": "https://ollama.com/",
+    "category": "Coding",
+    "description": "AI coding assistant to help write, debug, and understand code faster."
+  },
+  {
+    "title": "LM Studio",
+    "url": "https://lmstudio.ai/",
+    "category": "Coding",
+    "description": "AI coding assistant to help write, debug, and understand code faster."
+  },
+  {
+    "title": "Anyscale",
+    "url": "https://www.anyscale.com/",
+    "category": "Coding",
+    "description": "AI coding assistant to help write, debug, and understand code faster."
+  },
+  {
+    "title": "Together AI",
+    "url": "https://www.together.ai/",
+    "category": "Coding",
+    "description": "AI coding assistant to help write, debug, and understand code faster."
+  },
+  {
+    "title": "Fireworks AI",
+    "url": "https://fireworks.ai/",
+    "category": "Coding",
+    "description": "AI coding assistant to help write, debug, and understand code faster."
+  },
+  {
+    "title": "Groq",
+    "url": "https://groq.com/",
+    "category": "Coding",
+    "description": "AI coding assistant to help write, debug, and understand code faster."
+  },
+  {
+    "title": "Modal",
+    "url": "https://modal.com/",
+    "category": "Coding",
+    "description": "AI coding assistant to help write, debug, and understand code faster."
+  },
+  {
+    "title": "Notion AI",
+    "url": "https://www.notion.so/product/ai",
+    "category": "Productivity",
+    "description": "Write better, think faster, and organize everything in your Notion workspace."
+  },
+  {
+    "title": "Beautiful.ai",
+    "url": "https://www.beautiful.ai/",
+    "category": "Productivity",
+    "description": "AI-powered workspace tool designed to streamline your daily workflows."
+  },
+  {
+    "title": "Gamma",
+    "url": "https://gamma.app/",
+    "category": "Productivity",
+    "description": "AI-powered workspace tool designed to streamline your daily workflows."
+  },
+  {
+    "title": "Tome",
+    "url": "https://tome.app/",
+    "category": "Productivity",
+    "description": "AI-powered workspace tool designed to streamline your daily workflows."
+  },
+  {
+    "title": "Miro AI",
+    "url": "https://miro.com/ai/",
+    "category": "Productivity",
+    "description": "AI-powered workspace tool designed to streamline your daily workflows."
+  },
+  {
+    "title": "Otter.ai",
+    "url": "https://otter.ai/",
+    "category": "Productivity",
+    "description": "AI-powered workspace tool designed to streamline your daily workflows."
+  },
+  {
+    "title": "Fireflies.ai",
+    "url": "https://fireflies.ai/",
+    "category": "Productivity",
+    "description": "AI-powered workspace tool designed to streamline your daily workflows."
+  },
+  {
+    "title": "Bardeen",
+    "url": "https://www.bardeen.ai/",
+    "category": "Productivity",
+    "description": "AI-powered workspace tool designed to streamline your daily workflows."
+  },
+  {
+    "title": "Zapier AI",
+    "url": "https://zapier.com/ai",
+    "category": "Productivity",
+    "description": "AI-powered workspace tool designed to streamline your daily workflows."
+  },
+  {
+    "title": "Make",
+    "url": "https://www.make.com/",
+    "category": "Productivity",
+    "description": "AI-powered workspace tool designed to streamline your daily workflows."
+  },
+  {
+    "title": "Taskade",
+    "url": "https://www.taskade.com/",
+    "category": "Productivity",
+    "description": "AI-powered workspace tool designed to streamline your daily workflows."
+  },
+  {
+    "title": "Superhuman",
+    "url": "https://superhuman.com/",
+    "category": "Productivity",
+    "description": "AI-powered workspace tool designed to streamline your daily workflows."
+  },
+  {
+    "title": "Shortwave",
+    "url": "https://www.shortwave.com/",
+    "category": "Productivity",
+    "description": "AI-powered workspace tool designed to streamline your daily workflows."
+  },
+  {
+    "title": "Mem",
+    "url": "https://mem.ai/",
+    "category": "Productivity",
+    "description": "AI-powered workspace tool designed to streamline your daily workflows."
+  },
+  {
+    "title": "Reflect",
+    "url": "https://reflect.app/",
+    "category": "Productivity",
+    "description": "AI-powered workspace tool designed to streamline your daily workflows."
+  },
+  {
+    "title": "Sana",
+    "url": "https://sanalabs.com/",
+    "category": "Productivity",
+    "description": "AI-powered workspace tool designed to streamline your daily workflows."
+  },
+  {
+    "title": "Motion",
+    "url": "https://www.usemotion.com/",
+    "category": "Productivity",
+    "description": "AI-powered workspace tool designed to streamline your daily workflows."
+  },
+  {
+    "title": "Reclaim",
+    "url": "https://reclaim.ai/",
+    "category": "Productivity",
+    "description": "AI-powered workspace tool designed to streamline your daily workflows."
+  },
+  {
+    "title": "Clockwise",
+    "url": "https://www.getclockwise.com/",
+    "category": "Productivity",
+    "description": "AI-powered workspace tool designed to streamline your daily workflows."
+  },
+  {
+    "title": "Trevor AI",
+    "url": "https://trevorai.com/",
+    "category": "Productivity",
+    "description": "AI-powered workspace tool designed to streamline your daily workflows."
+  },
+  {
+    "title": "Akiflow",
+    "url": "https://akiflow.com/",
+    "category": "Productivity",
+    "description": "AI-powered workspace tool designed to streamline your daily workflows."
+  },
+  {
+    "title": "Sunsama",
+    "url": "https://sunsama.com/",
+    "category": "Productivity",
+    "description": "AI-powered workspace tool designed to streamline your daily workflows."
+  },
+  {
+    "title": "Fathom",
+    "url": "https://fathom.video/",
+    "category": "Productivity",
+    "description": "AI-powered workspace tool designed to streamline your daily workflows."
+  },
+  {
+    "title": "Read AI",
+    "url": "https://www.read.ai/",
+    "category": "Productivity",
+    "description": "AI-powered workspace tool designed to streamline your daily workflows."
+  },
+  {
+    "title": "Krisp",
+    "url": "https://krisp.ai/",
+    "category": "Productivity",
+    "description": "AI-powered workspace tool designed to streamline your daily workflows."
+  },
+  {
+    "title": "Glean",
+    "url": "https://www.glean.com/",
+    "category": "Productivity",
+    "description": "AI-powered workspace tool designed to streamline your daily workflows."
+  },
+  {
+    "title": "Dashworks",
+    "url": "https://www.dashworks.ai/",
+    "category": "Productivity",
+    "description": "AI-powered workspace tool designed to streamline your daily workflows."
+  },
+  {
+    "title": "Slite",
+    "url": "https://slite.com/",
+    "category": "Productivity",
+    "description": "AI-powered workspace tool designed to streamline your daily workflows."
+  },
+  {
+    "title": "Coda AI",
+    "url": "https://coda.io/product/ai",
+    "category": "Productivity",
+    "description": "AI-powered workspace tool designed to streamline your daily workflows."
+  },
+  {
+    "title": "Airtable AI",
+    "url": "https://airtable.com/platform/ai",
+    "category": "Productivity",
+    "description": "AI-powered workspace tool designed to streamline your daily workflows."
+  },
+  {
+    "title": "Grammarly",
+    "url": "https://www.grammarly.com/",
+    "category": "Marketing",
+    "description": "AI-powered typing assistant to improve writing, tone, and grammar."
+  },
+  {
+    "title": "Jasper",
+    "url": "https://www.jasper.ai/",
+    "category": "Marketing",
+    "description": "AI copilot for enterprise marketing teams to create branded content."
+  },
+  {
+    "title": "Copy.ai",
+    "url": "https://www.copy.ai/",
+    "category": "Marketing",
+    "description": "AI copywriting and marketing assistant to scale your content strategy."
+  },
+  {
+    "title": "Writesonic",
+    "url": "https://writesonic.com/",
+    "category": "Marketing",
+    "description": "AI copywriting and marketing assistant to scale your content strategy."
+  },
+  {
+    "title": "Rytr",
+    "url": "https://rytr.me/",
+    "category": "Marketing",
+    "description": "AI copywriting and marketing assistant to scale your content strategy."
+  },
+  {
+    "title": "Anyword",
+    "url": "https://anyword.com/",
+    "category": "Marketing",
+    "description": "AI copywriting and marketing assistant to scale your content strategy."
+  },
+  {
+    "title": "Surfer SEO",
+    "url": "https://surferseo.com/",
+    "category": "Marketing",
+    "description": "AI copywriting and marketing assistant to scale your content strategy."
+  },
+  {
+    "title": "Frase",
+    "url": "https://www.frase.io/",
+    "category": "Marketing",
+    "description": "AI copywriting and marketing assistant to scale your content strategy."
+  },
+  {
+    "title": "Clearscope",
+    "url": "https://www.clearscope.io/",
+    "category": "Marketing",
+    "description": "AI copywriting and marketing assistant to scale your content strategy."
+  },
+  {
+    "title": "MarketMuse",
+    "url": "https://www.marketmuse.com/",
+    "category": "Marketing",
+    "description": "AI copywriting and marketing assistant to scale your content strategy."
+  },
+  {
+    "title": "Sudowrite",
+    "url": "https://www.sudowrite.com/",
+    "category": "Marketing",
+    "description": "AI copywriting and marketing assistant to scale your content strategy."
+  },
+  {
+    "title": "NovelAI",
+    "url": "https://novelai.net/",
+    "category": "Marketing",
+    "description": "AI copywriting and marketing assistant to scale your content strategy."
+  },
+  {
+    "title": "Wordtune",
+    "url": "https://www.wordtune.com/",
+    "category": "Marketing",
+    "description": "AI copywriting and marketing assistant to scale your content strategy."
+  },
+  {
+    "title": "QuillBot",
+    "url": "https://quillbot.com/",
+    "category": "Marketing",
+    "description": "AI copywriting and marketing assistant to scale your content strategy."
+  },
+  {
+    "title": "ProWritingAid",
+    "url": "https://prowritingaid.com/",
+    "category": "Marketing",
+    "description": "AI copywriting and marketing assistant to scale your content strategy."
+  },
+  {
+    "title": "Hemingway Editor",
+    "url": "https://hemingwayapp.com/",
+    "category": "Marketing",
+    "description": "AI copywriting and marketing assistant to scale your content strategy."
+  },
+  {
+    "title": "Lex",
+    "url": "https://lex.page/",
+    "category": "Marketing",
+    "description": "AI copywriting and marketing assistant to scale your content strategy."
+  },
+  {
+    "title": "Hootsuite OwlyWriter",
+    "url": "https://www.hootsuite.com/features/owlywriter-ai",
+    "category": "Marketing",
+    "description": "AI copywriting and marketing assistant to scale your content strategy."
+  },
+  {
+    "title": "Lately",
+    "url": "https://www.lately.ai/",
+    "category": "Marketing",
+    "description": "AI copywriting and marketing assistant to scale your content strategy."
+  },
+  {
+    "title": "Taplio",
+    "url": "https://taplio.com/",
+    "category": "Marketing",
+    "description": "AI copywriting and marketing assistant to scale your content strategy."
+  },
+  {
+    "title": "Canva Magic Studio",
+    "url": "https://www.canva.com/magic/",
+    "category": "Design",
+    "description": "A suite of AI design tools built right into Canva."
+  },
+  {
+    "title": "Figma AI",
+    "url": "https://www.figma.com/ai/",
+    "category": "Design",
+    "description": "AI-powered features inside Figma to speed up the design process."
+  },
+  {
+    "title": "Uizard",
     "url": "https://uizard.io/",
-    "title": "UI Design Made Easy, Powered By AI | Uizard"
+    "category": "Design",
+    "description": "AI design tool to generate stunning UI, graphics, and visual assets."
   },
   {
-    "url": "https://app.notdiamond.ai/onboarding",
-    "title": "notdiamond | Dashboard"
+    "title": "Galileo AI",
+    "url": "https://www.usegalileo.ai/",
+    "category": "Design",
+    "description": "AI design tool to generate stunning UI, graphics, and visual assets."
   },
   {
-    "url": "https://sketch.metademolab.com/",
-    "title": "Animated Drawings | Meta FAIR"
+    "title": "Relume",
+    "url": "https://www.relume.io/",
+    "category": "Design",
+    "description": "AI design tool to generate stunning UI, graphics, and visual assets."
   },
   {
-    "url": "https://www.img2html.com/",
-    "title": "Image to HTML CSS code AI converter - IMG2HTML"
+    "title": "Webflow AI",
+    "url": "https://webflow.com/ai",
+    "category": "Design",
+    "description": "AI design tool to generate stunning UI, graphics, and visual assets."
   },
   {
-    "url": "https://aistudio.google.com/prompts/new_chat",
-    "title": "Chat | Google AI Studio"
+    "title": "Framer AI",
+    "url": "https://www.framer.com/ai/",
+    "category": "Design",
+    "description": "AI design tool to generate stunning UI, graphics, and visual assets."
   },
   {
-    "url": "https://services1.passportindia.gov.in/forms/registration",
-    "title": "Registration"
+    "title": "Dora",
+    "url": "https://dora.run/",
+    "category": "Design",
+    "description": "AI design tool to generate stunning UI, graphics, and visual assets."
   },
   {
-    "url": "https://gummysearch.com/product/",
-    "title": "Customer Research Tool for Reddit | GummySearch"
+    "title": "Spline",
+    "url": "https://spline.design/",
+    "category": "Design",
+    "description": "AI design tool to generate stunning UI, graphics, and visual assets."
   },
   {
-    "url": "https://invideo.io/make/googleveo/",
-    "title": "VEO 3.1: Googles latest AI video model integrated on invideo"
+    "title": "Looka",
+    "url": "https://looka.com/",
+    "category": "Design",
+    "description": "AI design tool to generate stunning UI, graphics, and visual assets."
   },
   {
-    "url": "https://neamx.com/",
-    "title": "NeamX - AI Thumbnail Maker | Viral Thumbnails in Seconds"
+    "title": "Brandmark",
+    "url": "https://brandmark.io/",
+    "category": "Design",
+    "description": "AI design tool to generate stunning UI, graphics, and visual assets."
+  },
+  {
+    "title": "Khroma",
+    "url": "https://www.khroma.co/",
+    "category": "Design",
+    "description": "AI design tool to generate stunning UI, graphics, and visual assets."
+  },
+  {
+    "title": "Huemint",
+    "url": "https://huemint.com/",
+    "category": "Design",
+    "description": "AI design tool to generate stunning UI, graphics, and visual assets."
+  },
+  {
+    "title": "Colormagic",
+    "url": "https://colormagic.app/",
+    "category": "Design",
+    "description": "AI design tool to generate stunning UI, graphics, and visual assets."
+  },
+  {
+    "title": "Fontjoy",
+    "url": "https://fontjoy.com/",
+    "category": "Design",
+    "description": "AI design tool to generate stunning UI, graphics, and visual assets."
+  },
+  {
+    "title": "Autodraw",
+    "url": "https://www.autodraw.com/",
+    "category": "Design",
+    "description": "AI design tool to generate stunning UI, graphics, and visual assets."
+  },
+  {
+    "title": "Magician",
+    "url": "https://magician.design/",
+    "category": "Design",
+    "description": "AI design tool to generate stunning UI, graphics, and visual assets."
+  },
+  {
+    "title": "Genius",
+    "url": "https://genius.design/",
+    "category": "Design",
+    "description": "AI design tool to generate stunning UI, graphics, and visual assets."
+  },
+  {
+    "title": "Viesus",
+    "url": "https://www.viesus.com/",
+    "category": "Design",
+    "description": "AI design tool to generate stunning UI, graphics, and visual assets."
+  },
+  {
+    "title": "Fronty",
+    "url": "https://fronty.com/",
+    "category": "Design",
+    "description": "AI design tool to generate stunning UI, graphics, and visual assets."
   }
 ];
